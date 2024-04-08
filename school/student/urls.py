@@ -1,4 +1,10 @@
 from django.urls import path 
 
 
-urlpatterns = []
+from . import views
+
+
+
+urlpatterns = [
+    path('student/', views.student , name='student'),
+]
